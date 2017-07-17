@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:local="clr-namespace:Versions"
+		xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+		x:Class="Versions.VersionsPage"
+		BackgroundColor="#282d32"
+		>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="200" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<StackLayout Grid.Row="0" VerticalOptions="Start" HorizontalOptions="Center">
+			<StackLayout Margin="0,50,0,0" Orientation="Horizontal">
+				<Label Text="Welcome to" VerticalOptions="Center" TextColor="White" FontSize="32" />
+				<controls:ExtendedLabel Text="Sonoma" TextColor="White" FontSize="32" IsStrikeThrough="true" />
+			</StackLayout>
+			<Label HorizontalOptions="Center" Text="Mobile Center" TextColor="White" FontSize="32"/>
+		</StackLayout>
+		<StackLayout Grid.Row="1" HeightRequest="100" VerticalOptions="Fill">
+			<StackLayout>
+				<Label Text="App Version" HorizontalOptions="Center" TextColor="White" FontSize="32" />
+				<Label x:Name="lblVersion" Text="x.x.x.x" HorizontalOptions="Center" TextColor="White" FontSize="32"/>
+			</StackLayout>
+		</StackLayout>
+	</Grid>
+</ContentPage>
